@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="surveyForm">
+        <h1>Survey Form</h1>
+        <label for="firstName">First Name: 
+           <input type="text" id="firstName" required>
+        </label>
+
+        <label for="lastName">Last Name: 
+               <input type="text" id="lastName" required>
+         </label>
+        <label for="dob">Date of Birth: 
+                <input type="date" id="dob" required>
+          </label>
+        <label for="country">Country: 
+        <select id="country" required>
+          <option value="">Select</option>
+          <option value="USA">India</option>
+          <option value="USA">UK</option>
+          <option value="USA">China</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <!-- Add more countries here -->
+        </select>
+        </label>
+
+        <label>Gender: 
+        <label><input type="checkbox" name="gender" value="male"> Male</label>
+        <label><input type="checkbox" name="gender" value="female"> Female</label>
+        <label><input type="checkbox" name="gender" value="other"> Other</label>
+        </label>
+
+        <label for="profession">Profession: 
+        <input type="text" id="profession" required>
+        </label>
+
+        <label for="email">Email:
+        <input type="email" id="email" required>
+        </label>
+
+        <label for="mobile">Mobile Number:
+        <input type="tel" id="mobile" required>
+        </label>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </form>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Survey Form Submission</h2>
+        <div id="popupData"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

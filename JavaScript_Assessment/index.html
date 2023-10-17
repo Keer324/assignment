@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScriptAssessment</title>
+</head>
+<body>
+
+
+
+<!--1.Take a sentence as an input and reverse every word in that sentence. 
+Example - This is a sunny day > shiT si a ynnus yad.-->
+
+<script type="text/javascript">
+  function reverseLettersInSentence(sentence) {
+  const characters = sentence.split('');
+  const reversedCharacters = characters.reverse();
+  const reversedSentence = reversedCharacters.join('');
+  return reversedSentence;
+}
+const inputSentence = "This is a test sentence.";
+const reversedSentence = reverseLettersInSentence(inputSentence);
+console.log(reversedSentence);
+
+/*Output:
+.ecnetnes tset a si sihT
+*/
+</script>
+
+
+
+
+<!--2.Perform sorting of an array in descending order.
+-->
+<script type="text/javascript">
+	const numbers = [5, 2, 9, 1, 5, 6];
+    numbers.sort(function(a, b) {
+    return b - a;
+});
+console.log(numbers);
+
+/*Output:
+[9, 6, 5, 5, 2, 1]
+*/
+</script>
+</body>
+</html>
